@@ -1,0 +1,181 @@
+body {
+    font-family:'DM-Serif-Display-Static';
+    font-weight: 300;
+    background-color: #F2F1F0;
+    color: #56494C;
+    text-transform: uppercase;
+}
+header{
+   margin-top: 1rem;
+   padding: 2rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    text-align: center;
+}
+#Huvudrubrik{
+    font-family:'DM-Serif-Display-Static';
+    font-weight: 300;
+    color: #56494C;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    text-transform: capitalize;
+}
+.navbar{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    align-items: center;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:20px;
+}
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor:pointer;
+    z-index:100;
+    position: relative;
+}
+/* Tillhör JavaScript */
+.navbar.active .menu{
+     display: flex; /*Visar menyn när 'actitve'-klassen är tillagd */
+}
+
+.navbar li{
+    margin-left: auto;
+}
+.menu li a {
+    font-family: 'DM-Serif-Display-Static';
+    color: #56494C;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+.indContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bioContainer {
+    display: flex; /* Gör så att bilden och texten ligger bredvid varandra */
+    align-items: center; /* Justera dem vertikalt centrerat */
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.profil {
+    width: 400px; /* Storlek på bilden */
+    border-radius: 10px;
+    margin-right: 20px; /* Avstånd mellan bilden och texten */
+}
+#textContainer {
+    font-family: 'DM-Serif-Display-Static';
+    color: #56494C;
+    flex-grow: 1;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: none;
+}
+#minTitel {
+    text-align: center;   
+}
+.exampels{
+    text-align: center;
+}
+.flexContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.slideShow{
+    position:relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.mySlides{
+    display:none;
+}
+.mySlides img{
+    width: 100%;
+    height: auto;
+}
+.prev, .next {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width: auto;
+    padding:16px;
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius:3px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.prev {
+    left: 10px;
+}
+.next{
+    right:10px;
+}
+#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Två kolumner */
+    gap: 20px; /* Mellanrum mellan rutorna */
+    padding: 20px;
+    text-transform: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Visa hamburgarikonen på små skärmar */
+    }
+    /* Denna ligger med i @medi */
+    .navbar ul {
+        display: none; /* Döljer menyn som standard på små skärmar */
+        flex-direction: column; /* Visar menyn vertikalt */
+        background-color: rgba(242, 241, 240, 0.8); /* Samma bakgrund som sidan */
+        position: absolute; /* Positionerar menyn */
+        top: 40px; /* Justera detta för att passa din layout */
+        left: 50px;
+        align-items: flex-start;
+        border-radius: 10px;
+        transform: translateX(-40%);
+        /* width: 150px;  */
+        z-index: 100; /* För att säkerställa att menyn är ovanför andra element */
+    }
+
+    .navbar.active ul {
+        display: flex; /* Visa menyn när 'active'-klassen är tillagd */
+    }
+
+    .navbar li {
+        text-align:left;
+        padding: 20px 30px; /*Padding på varje länk*/
+        width: 100%;
+    }
+    header.container{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+}    

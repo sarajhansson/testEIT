@@ -1,0 +1,39 @@
+
+{
+    "description":"Jag heter Sara Josefina Hansson och kommer från Göteborg. Jag har alltid haft en förkärlek för smycken och är fascinerad av hur olika metaller fungerar och samspelar med varandra.\n Det ledde mig till att utbilda mig inom silversmide, där jag verkligen fick lära mig att förstå hur man kan förädla material som silver och guld till unika och vackra smycken.\n Idag ägnar jag mig åt att designa och tillverka smycken, och jag älskar att se hur varje detalj faller på plats och speglar min passion för hantverket.",
+    "projects": [
+        {
+            "titel": "Projekt 1",
+            "kund": "Adam och Eva",
+            "description": "kort beskrivning av A",
+            "details": "Mer information om projekt A"
+        },
+        {
+            "titel": "Projekt 2",
+            "kund": "B",
+            "description": "kort beskrivning av B",
+            "details": "Mer information om projekt B"
+        },
+        {
+            "titel": "Projekt 3",
+            "kund": "C",
+            "description": "kort beskrivning av C",
+            "details": "Mer information om projekt C"
+        },
+        {
+            "titel": "Projekt 4",
+            "kund": "D",
+            "description": "kort beskrivning av D",
+            "details": "Mer information om projekt D"
+        },
+        {
+            "titel": "Projekt 5",
+            "kund": "E",
+            "description": "kort beskrivning av E",
+            "details": "Mer information om projekt E"
+        }
+    ]
+}
+
+
+
